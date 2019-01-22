@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdA-T3-Nsh">
+                                <rect key="frame" x="16" y="40" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lC-Cw-q8x">
+                                <rect key="frame" x="16" y="78" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-1m-G1U">
+                                <rect key="frame" x="16" y="107" width="140" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="attendButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slA-dd-wHi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muP-SD-4ow">
+                                <rect key="frame" x="164" y="78" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b2-Pe-gKc">
+                                <rect key="frame" x="164" y="107" width="140" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7b-Ei-w0b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5b2-Pe-gKc" firstAttribute="top" secondItem="muP-SD-4ow" secondAttribute="bottom" constant="8" id="5Yg-Nn-v5y"/>
+                            <constraint firstItem="JdA-T3-Nsh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="HjG-Sm-RBF"/>
+                            <constraint firstItem="JdA-T3-Nsh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LZz-j0-nE1"/>
+                            <constraint firstItem="5b2-Pe-gKc" firstAttribute="width" secondItem="iL4-1m-G1U" secondAttribute="width" id="Lj9-5i-kzB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="muP-SD-4ow" secondAttribute="trailing" constant="16" id="PHU-Ji-9Ff"/>
+                            <constraint firstItem="muP-SD-4ow" firstAttribute="top" secondItem="JdA-T3-Nsh" secondAttribute="bottom" constant="8" id="PPQ-mm-XOw"/>
+                            <constraint firstItem="1lC-Cw-q8x" firstAttribute="top" secondItem="JdA-T3-Nsh" secondAttribute="bottom" constant="8" id="Q0c-cQ-hP0"/>
+                            <constraint firstItem="iL4-1m-G1U" firstAttribute="top" secondItem="1lC-Cw-q8x" secondAttribute="bottom" constant="8" id="UOU-hk-bPE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5b2-Pe-gKc" secondAttribute="trailing" constant="16" id="d6u-aa-nK9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JdA-T3-Nsh" secondAttribute="trailing" constant="16" id="j2H-Tc-xUj"/>
+                            <constraint firstItem="muP-SD-4ow" firstAttribute="leading" secondItem="1lC-Cw-q8x" secondAttribute="trailing" constant="8" id="nJh-WW-t5b"/>
+                            <constraint firstItem="iL4-1m-G1U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rS1-gk-vnp"/>
+                            <constraint firstItem="1lC-Cw-q8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ujd-a0-YT6"/>
+                            <constraint firstItem="5b2-Pe-gKc" firstAttribute="leading" secondItem="iL4-1m-G1U" secondAttribute="trailing" constant="8" id="vqa-GW-F7l"/>
+                            <constraint firstItem="muP-SD-4ow" firstAttribute="width" secondItem="1lC-Cw-q8x" secondAttribute="width" id="yfh-pV-ICb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="attendButton" destination="iL4-1m-G1U" id="bfa-CE-2ep"/>
+                        <outlet property="cancelButton" destination="5b2-Pe-gKc" id="MLe-VO-dyO"/>
+                        <outlet property="cancelLabel" destination="muP-SD-4ow" id="9Md-mN-AJh"/>
+                        <outlet property="nameTextField" destination="JdA-T3-Nsh" id="RaD-xD-kQS"/>
+                        <outlet property="titleLabel" destination="1lC-Cw-q8x" id="PyU-nM-5KF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
